@@ -90,13 +90,22 @@ img { max-width: 100%; display: block; }
 }
 
 .nav-logo {
-  font-size: 1.3rem;
-  font-weight: 700;
-  background: var(--accent-gradient);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  letter-spacing: -0.02em;
+  display: flex;
+  align-items: center;
+}
+
+.nav-logo-img {
+  height: 36px;
+  width: auto;
+  border-radius: 4px;
+  transition: var(--transition);
+  vertical-align: middle;
+  margin-top: -20px;
+}
+
+.nav-logo-img:hover {
+  transform: scale(1.05);
+  filter: brightness(1.2);
 }
 
 .nav-links { display: flex; gap: 2rem; list-style: none; }
